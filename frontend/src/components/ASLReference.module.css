@@ -1,0 +1,65 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle {
+  align-self: flex-start;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--accent-light);
+  background: none;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+  gap: 8px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  min-height: 48px;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.cardActive {
+  border-color: var(--accent);
+  background: rgba(124, 106, 247, 0.1);
+  grid-column: span 3;
+  flex-direction: row;
+  padding: 10px 14px;
+}
+
+.cardLetter {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+.cardDesc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: left;
+}

@@ -1,0 +1,111 @@
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+.letterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.letter {
+  font-size: 100px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+  min-width: 110px;
+  text-align: center;
+}
+
+.holdRing { display: flex; align-items: center; }
+
+.confRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.confLabel {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.barWrap {
+  position: relative;
+  flex: 1;
+  height: 7px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.barLabel {
+  position: absolute;
+  right: 0;
+  font-size: 11px;
+  color: var(--text-muted);
+  transform: translateX(110%);
+}
+
+.top3 {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top3Label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.top3Row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top3Letter {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-light);
+  min-width: 20px;
+}
+
+.top3Pct {
+  font-size: 13px;
+  color: var(--text-muted);
+  min-width: 36px;
+  text-align: right;
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 8px 0;
+}
